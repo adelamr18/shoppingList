@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg  navbar-dark bg-dark" id="bootstrap-overides">
+    <a class="navbar-brand" href="#">Einkaufliste
+        <i class="glyphicon glyphicon-shopping-cart"></i>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active" id="shopping-text">
+                <div id="productsprice">
+                    <a class="nav-link" href="#">Produckte Priese
+                        <i class="glyphicon glyphicon-usd"></i>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item active" id="shopping-help">
+                <div id="help">
+                    <a class="nav-link" href="#">Hilfe
+                        <i class="glyphicon glyphicon-question-sign"></i>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="form-group has-feedback">
+    <input type="text" class="form-control" placeholder="Produktenamen eingeben" />
+    <i class="glyphicon glyphicon-plus form-control-feedback"></i>
+</div>
+<label for="exampleInputEmail1">Vorschlage Produktenamen</label>
+<div class="card" ng-repeat="product in vm.products">
+        <div class="card-body">
+                <h1>{{product.productName}}</h1>
+
+        </div>
+      </div>
+<!-- <div ng-repeat="product in vm.products">
+<h1>{{product.productName}}</h1>
+<img  ng-src="{{product.imageUrl}}" title="{{product.productName}}" style="height:50px; width:50px">
+</div> -->

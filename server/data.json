@@ -1,0 +1,30 @@
+[{
+    "productName": "Brot",
+    "price": 4.95,
+    "category": "Breads",
+    "imageUrl": "client/assets/images/leafrake.jpg"
+},
+{
+    "productName": "Milch",
+    "price": 4.95,
+    "category": "Dairy",
+    "imageUrl": "./app/assets/images/leafrake.jpg"
+}, {
+    "productName": "Kartoffel",
+    "price": 4.95,
+    "category": "Appetizers",
+    "imageUrl": "./app/assets/images/leafrake.jpg"
+}
+    ,
+{
+    "productName": "Hanchen",
+    "price": 4.95,
+    "category": "Meat",
+    "imageUrl": "./app/assets/images/leafrake.jpg"
+},
+{
+    "productName": "Wurst",
+    "price": 4.95,
+    "category": "Meat",
+    "imageUrl": "./app/assets/images/leafrake.jpg"
+}]
