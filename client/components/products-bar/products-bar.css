@@ -1,0 +1,80 @@
+.navbar.navbar-expand-lg.navbar-dark.bg-dark#bootstrap-overides{
+    position:relative;
+    top:0;
+    color:white;
+    border-radius: 0%;
+}
+.navbar.navbar-expand-lg.navbar-dark.bg-dark#bootstrap-overides a:hover{
+    color:red;
+    letter-spacing: 0.1em;
+    font-family:serif;
+    transition:1s all ease-in-out;    
+}
+.navbar-nav .nav-item.active#shopping-text {
+position: absolute;
+left:570px; 
+top:14px;
+font-size:18px;
+}
+.navbar-nav .nav-item.active#shopping-text #productsprice a:hover{
+    color:blue;
+    letter-spacing: 0.1em;
+    font-family:serif;
+    transition:1s all ease-in-out;  
+}
+.navbar-nav .nav-item.active#shopping-text #productsprice a{
+    color:white;
+}
+.navbar-nav .nav-item.active#shopping-text #productsprice a i{
+    font-size:18px;
+}
+.navbar-nav .nav-item.active#shopping-help {
+    position: absolute;
+    left:1171px;
+    top:14px;
+    font-size:18px; 
+    color:white;
+    }
+    .navbar-nav .nav-item.active#shopping-help a {
+        color:white;
+    }
+    .navbar-nav .nav-item.active#shopping-help #help  a:hover {
+        color:rgb(178,249,178);
+        letter-spacing: 0.1em;
+        font-family:serif;
+        transition:1s all ease-in-out; }
+    .navbar-nav .nav-item.active#shopping-help  a i {
+        font-size:18px;
+    }
+    .form-group.has-feedback i {
+        color:red;
+        font-size:18px;
+        pointer-events: all;
+    }
+    .product-suggestions{
+float:left;
+width:100px;
+height:31px;
+border:1px black solid;
+margin-right:10px;
+text-align: center;
+vertical-align: middle;
+color:blue;
+margin-bottom:3px;
+    }
+.box {
+    position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        /* height: 00px; */
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+vertical-align: middle;
+ }
+ body{
+     background-color: wheat;
+ }
+.card#show-added-products{
+    margin-top: 15px;   
+}

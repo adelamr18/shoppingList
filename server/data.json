@@ -1,0 +1,47 @@
+[
+    {
+        "productName": "Wasa",
+        "price": 4.95,
+        "imageUrl": "client/assets/images/leafrake.jpg"
+    },
+    {
+        "productName": "Corny",
+        "price": 4.95,
+        "imageUrl": "./app/assets/images/leafrake.jpg"
+    },
+    {
+        "productName": "Hipp",
+        "price": 4.95,
+        "imageUrl": "./app/assets/images/leafrake.jpg"
+    },
+    {
+        "productName": "Coca-Cola",
+        "price": 4.95,
+        "imageUrl": "./app/assets/images/leafrake.jpg"
+    },
+    {
+        "productName": "Volvic",
+        "price": 4.95,
+        "imageUrl": "./app/assets/images/leafrake.jpg"
+    },
+    {
+        "productName": "Frosta",
+        "price": 4.95,
+        "imageUrl": "./app/assets/images/leafrake.jpg"
+    },
+    {
+        "productName": "Langnese",
+        "price": 4.95,
+        "imageUrl": "./app/assets/images/leafrake.jpg"
+    },
+    {
+        "productName": "Pampers",
+        "price": 4.95,
+        "imageUrl": "./app/assets/images/leafrake.jpg"
+    },
+    {
+        "productName": "Haribo",
+        "price": 4.95,
+        "imageUrl": "./app/assets/images/leafrake.jpg"
+    }
+]

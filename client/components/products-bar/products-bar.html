@@ -1,0 +1,99 @@
+<nav class="navbar navbar-expand-lg  navbar-dark bg-dark" id="bootstrap-overides">
+    <a class="navbar-brand" href="#">Einkaufliste
+        <i class="glyphicon glyphicon-shopping-cart"></i>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active" id="shopping-text">
+                <div id="productsprice">
+                    <a class="nav-link" href="#">Produckte Priese
+                        <i class="glyphicon glyphicon-usd"></i>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item active" id="shopping-help">
+                <div id="help">
+                    <a class="nav-link" href="#">Hilfe
+                        <i class="glyphicon glyphicon-question-sign"></i>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="form-group has-feedback">
+    <input type="text" ng-model="product" class="form-control" placeholder="Produktenamen eingeben" />
+    <i class="glyphicon glyphicon-plus form-control-feedback" ng-click="vm.logProduct(product) "></i>
+</div>
+
+<label for="exampleInputEmail1">Vorschlage Produktenamen</label>
+<div class="card">
+    <div class="card-body">
+        <div class="container">
+            <div ng-repeat="product in vm.products">
+                <div class="product-suggestions col-sm-6 col-md-4 col-lg-10 col-xl-10">{{product.productName}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<label>Shopping List</label>
+<div class="table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">
+                    <a ng-click="sortType = 'productNumber'">
+                        Product Number
+                        <span ng-show="sortType == 'productNumber'" class="fa fa-caret-down"></span>
+                    </a>
+                </th>
+                </th>
+                <th scope="col">
+                    <a ng-click="sortType = 'productName'">
+                        Product
+                        <span ng-show="sortType == 'productName'" class="fa fa-caret-down"></span>
+                    </a>
+                </th>
+                </th>
+                <th scope="col">
+                    <a ng-click="sortType = 'price'">
+                        Price
+                        <span ng-show="sortType == 'price'" class="fa fa-caret-down"></span>
+                    </a>
+                </th>
+                </th>
+                <button ng-click="predicate=''">Set to unsorted</button>
+                <th scope="col">
+                    <a ng-click="order('category')">
+                        Category
+                        <span ng-show="predicate === 'category'" class="sortorder"ng-class="{reverse:reverse}"></span>
+                    </a>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="input in vm.productsarray | orderBy:predicate:sortReverse">
+                <th class="table-primary">{{input.productNumber}}</th>
+                <td class="table-primary">{{input.productName}}</td>
+                <td class="table-primary">{{input.price}} $</td>
+                <td class="table-primary">{{input.category}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
