@@ -49,5 +49,32 @@ font-size:18px;
     .form-group.has-feedback i {
         color:red;
         font-size:18px;
+        pointer-events: all;
     }
-    
+    .product-suggestions{
+float:left;
+width:100px;
+height:31px;
+border:1px black solid;
+margin-right:10px;
+text-align: center;
+vertical-align: middle;
+color:blue;
+margin-bottom:3px;
+    }
+.box {
+    position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        /* height: 00px; */
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+vertical-align: middle;
+ }
+ body{
+     background-color: wheat;
+ }
+.card#show-added-products{
+    margin-top: 15px;   
+}
