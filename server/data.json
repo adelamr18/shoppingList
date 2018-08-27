@@ -15,7 +15,17 @@
         "imageUrl": "./app/assets/images/leafrake.jpg"
     },
     {
-        "productName": "Coca-Cola",
+        "productName": "Milka",
+        "price": 4.95,
+        "imageUrl": "./app/assets/images/leafrake.jpg"
+    },
+    {
+        "productName": "Cocacola",
+        "price": 4.95,
+        "imageUrl": "./app/assets/images/leafrake.jpg"
+    },
+    {
+        "productName": "Ferrero",
         "price": 4.95,
         "imageUrl": "./app/assets/images/leafrake.jpg"
     },
